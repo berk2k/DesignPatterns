@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -13,7 +14,7 @@ namespace DesignPatterns.Repository
     {
         private readonly ProductService _productService;
 
-        public ProductsController(ProductService productService)
+        public ProductController(ProductService productService)
         {
             _productService = productService;
         }
